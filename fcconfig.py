@@ -35,7 +35,7 @@ class FCConfig(object):
         self.readConfigHelper("Classifier", "allowAdaptive", "boolean")
         
         self.readConfigHelper("Crawling", "threshold", "float")
-        
+        self.readConfigHelper("Crawling", "pageLimit", "int")
 
     def readConfigHelper(self, sect, opt, dataType="string"):
         """ Helper function to read in an option, based on dataType """
